@@ -1,0 +1,221 @@
+* {
+  background-color: turquoise;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.load {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+} 
+
+.load div {
+  position: absolute;
+  background-color: white;
+  width: 150px;
+  height: 30px;
+  z-index: 1;
+  animation: loading 2s linear infinite;
+}
+
+.load p {
+  top: 5px;
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+  color:white;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+
+}
+
+@keyframes loading {
+  0% {
+    background-color: white;
+    transition: linear;
+    width: 0px;
+  }
+  50% {
+    background-color: white;
+    transition: linear;
+    width: 75px;
+  }
+  100% {
+    background-color: white;
+    transition: linear;
+    width: 150px;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.circles {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.spinner {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: 100px;
+  margin-left: 2px;
+  display: inline-block;
+  position: absolute;
+  animation: spin ease-in-out 2s infinite;
+}
+
+.span1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+}
+
+.span3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  display: inline-block;
+  position: absolute;
+  left: 35px;
+}
+
+@-webkit-keyframes spin {
+  0% {transform: rotate(0deg);
+      transform-origin: center;
+  }
+  100% {transform: rotate(360deg); 
+      transform-origin: center;}
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.loading {
+  position: relative;
+  top: 400px;
+  left: 100px;
+} 
+
+.loading p {
+  position: relative;
+  background-color: red;
+  color:white;
+  width: 130px;
+  height: 20px;
+  letter-spacing: 5px;
+  top: 0px;
+  text-align: center;
+  animation: load 2s linear infinite;
+}
+.loading div {
+  position: absolute;
+  background-color: red;
+  width: 130px;
+  height: 20px;
+  text-align: center;
+
+}
+
+
+@keyframes load {
+  0% {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: linear;
+    width: 0px;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);;
+    transition: linear;
+    width: 75px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: linear;
+    width: 130px;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+
+.vezba4 {
+  position: relative;
+  top: 250px;
+  left: 500px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.kvadrat {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: kvadrat 2s linear infinite;
+}
+
+.krug {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  top: 105px;
+  right: 105px;
+  animation: krug 2s linear infinite;
+}
+
+@keyframes kvadrat {
+  0% {
+      background-color: rgba(255, 255, 255, 0.664);
+      transition: linear;
+      width: 0px;
+  }
+  100% {
+      background-color: rgba(255, 255, 255, 0.664);
+      transition: linear;
+      width: 100px;
+  }
+}
+
+@keyframes krug {
+  0% {
+    left: -20px;
+    top: -20px;
+  }
+  25% {
+    left: 100px;
+    top: -20px;
+  }
+  50% {
+    left: 100px;
+    top: 100px;
+  }
+  75% {
+    left: 0px;
+    top: 100px;
+  }
+  90% {
+    left: -20px;
+    top: 100px;
+  }
+  100% {
+    left: -20px;
+    top: -20px;
+  }
+}
