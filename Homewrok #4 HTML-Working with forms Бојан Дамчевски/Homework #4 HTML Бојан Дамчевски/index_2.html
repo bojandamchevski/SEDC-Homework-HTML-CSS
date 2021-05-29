@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Working with forms</title>
+</head>
+
+<body style="background-color: wheat; color: chocolate;">
+    <h1><b>Dado Tea Lunch Special</b></h1>
+    <p>Monday through Friday</p>
+    <p>11am-3pm</p>
+    <p>$9.95 plus tax</p>
+    <br>
+    <p>Includes sandwiches, pizzas, snacks and drinks.</p>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend id="to_top">Order Information</legend>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+            <br>
+            <br>
+            <label for="adress">Adress:</label>
+            <br>
+            <input type="text" name="adress" id="adress" placeholder="Please enter your adress" required>
+            <br>
+            <br>
+            <br>
+            <input type="radio" name="order" id="here" value="here" checked="checked">
+            <label for="here">Here</label>
+            <br>
+            <input type="radio" name="order" id="to_go" value="to_go">
+            <label for="to_go">To go</label>
+            <br>
+            <br>
+            <label for="date">Or you can schedule a meal and it will be dilivered to you:</label>
+            <input type="date" name="date" id="date" min="2020-12-04" max="2020-12-20">
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Sandwiches</legend>
+            <p><b>Monday</b></p>
+            <input type="checkbox" name="sandwich" id="tomatomozz" value="Tomato Mozzarella" checked="checked">
+            <label for="tomatomozz">Tomato Mozzarella</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="chicken" value="Chicken Salad">
+            <label for="chicken">Chicken Salad</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="hamsan" value="Ham Sandwich">
+            <label for="hamsan">Ham Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="vegan_spec" value="Vegan Special">
+            <label for="vegan_spec">Vegan Special</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="club" value="Club Sandwich">
+            <label for="club">Club Sandwich</label>
+            <br>
+            <br>
+            <br>
+            <p><b>Tuesday</b></p>
+            <input type="checkbox" name="sandwich" id="grwrap" value="Greek Salad Wrap" checked="checked">
+            <label for="grwrap">Greek Salad Wrap</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="twrap" value="Toto Wrap">
+            <label for="twrap">Toto Wrap</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="pzsan" value="Pizza Sandwich">
+            <label for="pzsan">Pizza Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="american" value="American Sub">
+            <label for="american">American Sub</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="bacon" value="Bacon Sandwich">
+            <label for="bacon">Bacon Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="bagel" value="Bagel Toast">
+            <label for="bagel">Bagel Toast</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="bologna" value="Bologna Sandwich">
+            <label for="bologna">Bologna Sandwich</label>
+            <br>
+            <br>
+            <br>
+            <p><b>Wednesday</b></p>
+            <input type="checkbox" name="sandwich" id="barb" value="Barbaque Sandwich" checked="checked">
+            <label for="barb">Barbaque Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="barros" value="Barros Jarpa">
+            <label for="barros">Barros Jarpa</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="bauru" value="Bauru">
+            <label for="bauru">Bauru</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="pepper" value="Red Pepper Hummus">
+            <label for="pepper">Red Pepper Hsmmus</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="turk" value="Roasted Turkey">
+            <label for="turk">Roasten Turkey</label>
+            <br>
+            <br>
+            <br>
+            <p><b>Thursday</b></p>
+            <input type="checkbox" name="sandwich" id="club1" value="Club Sandwich Family size" checked="checked">
+            <label for="club1">Club Sandwich Family size</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="lovecka" value="Lovecka Sandwich">
+            <label for="lovecka">Lovecka Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="mkd" value="Macedonian Sandwich">
+            <label for="mkd">Macedonian Sandwiche</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="carrot" value="Carrot-Ginger Hummus Wrap">
+            <label for="carrot">Carrot-Ginger Hummus Wrap</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="kebab" value="Kebab Wrap">
+            <label for="kebab">Kebab Wrap</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="egg" value="Egg Salad">
+            <label for="egg">Egg Salad</label>
+            <br>
+            <br>
+            <br>
+            <p><b>Friday</b></p>
+            <input type="checkbox" name="sandwich" id="beef" value="Beef Sandwich" checked="checked">
+            <label for="beef">Beef Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="pork" value="Pork Sandwich">
+            <label for="pork">Pork Sandwich</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="dadow" value="Dado Wrap">
+            <label for="dadow">Dado Wrap</label>
+            <br>
+            <input type="checkbox" name="sandwich" id="tunas" value="Tuna Salad">
+            <label for="tunas">Tuna Salad</label>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <input type="checkbox" name="bread" id="glutenfree" value="Gluten Free Bread">
+            <label for="glutenfree">Gluten Free Bread</label>&nbsp;<em>(Extra 75c)</em>
+            <br>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Pizzas</legend>
+            <p><strong>We make theese Pizzas everyday, but you have to order it min 3 hours before</strong></p>
+            <br>
+            <input type="checkbox" name="pizza" id="margarita" value="Margarita" checked="checked">
+            <label for="margarita">Margarita</label>
+            <br>
+            <input type="checkbox" name="pizza" id="calzone" value="Calzone">
+            <label for="calzone">Calzone</label>
+            <br>
+            <input type="checkbox" name="pizza" id="oliva" value="Oliva">
+            <label for="oliva">Oliva</label>
+            <br>
+            <input type="checkbox" name="pizza" id="capri" value="Capri">
+            <label for="capri">Capri</label>
+            <br>
+            <input type="checkbox" name="pizza" id="pineapple" value="Pineapple">
+            <label for="pineapple">Pineapple</label>
+            <br>
+            <input type="checkbox" name="pizza" id="baconpizza" value="Bacon">
+            <label for="baconpizza">Bacon</label>
+            <br>
+            <input type="checkbox" name="pizza" id="napoli" value="Napoli">
+            <label for="napoli">Napoli</label>
+            <br>
+            <input type="checkbox" name="pizza" id="quattro" value="Quattro Formaggi">
+            <label for="quattro">Quattro Formaggi</label>
+            <br>
+            <input type="checkbox" name="pizza" id="veganpizza" value="Vegan">
+            <label for="veganpizza">Vegan</label>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <p><b>Extra of something is $1</b></p>
+            <input type="checkbox" name="extra" id="cheeseextra" value="Cheese" checked="checked">
+            <label for="cheeseextra">Cheese</label>
+            <br>
+            <input type="checkbox" name="extra" id="baconextra" value="Bacon">
+            <label for="baconextra">Bacon</label>
+            <br>
+            <input type="checkbox" name="extra" id="olivesextra" value="Olives">
+            <label for="olivesextra">Olives</label>
+            <br>
+            <input type="checkbox" name="extra" id="mushroomsextra" value="Mushrooms">
+            <label for="mushroomsextra">Mushrooms</label>
+            <br>
+            <input type="checkbox" name="extra" id="onionextra" value="Onion">
+            <label for="onionextra">Onion</label>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Snacks</legend>
+            <input type="checkbox" name="snacks" id="apple" value="Apple" checked="checked">
+            <label for="apple">Apple</label>
+            <br>
+            <input type="checkbox" name="snacks" id="banana" value="Banana">
+            <label for="banana">Banana</label>
+            <br>
+            <input type="checkbox" name="snacks" id="potatochips" value="Potato Chips">
+            <label for="potatochips">Potato Chips</label>
+            <br>
+            <input type="checkbox" name="snacks" id="fishandchips" value="Fish and Chips">
+            <label for="fishandchips">Fish and Chips</label>
+            <br>
+            <input type="checkbox" name="snacks" id="almonds" value="Almonds">
+            <label for="almonds">Almonds</label>
+            <br>
+            <input type="checkbox" name="snacks" id="hazelnuts" value="Hazelnuts">
+            <label for="hazelnuts">Hazelnuts</label>
+            <br>
+            <input type="checkbox" name="snacks" id="peanuts" value="Peanuts">
+            <label for="peanuts">Peanuts</label>
+            <br>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Drinks</legend>
+            <label for="nonalcdrinks"><b>Non-Alcoholic</b></label>
+            <select name="nonalcdrinks" id="nonalcdrinks">
+                <option disabled selected>Please select a drink</option>
+                <option value="fanta">Fanta</option>
+                <option value="coke">Coca Cola</option>
+                <option value="scheppes">Scheppes</option>
+                <option value="juice">Orange Juice</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="beer"><b>Beer</b></label>
+            <select name="beer" id="beer">
+                <option disabled selected>Please select a drink</option>
+                <option value="paleale">Pale Ale</option>
+                <option value="ipa">IPA</option>
+                <option value="pilsner">Pilsner</option>
+                <option value="lager">Lager</option>
+                <option value="stout">Stout</option>
+                <option value="smoked">Smoked</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="wine"><b>Wine</b></label>
+            <select name="wine" id="wine">
+                <option disabled selected>Please select a drink</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="rose">Rose</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="spirits"><b>Spirits</b></label>
+            <select name="spirits" id="spirits">
+                <option disabled selected>Please select a drink</option>
+                <option value="rakija">Rakija</option>
+                <option value="vodka">Vodka</option>
+                <option value="cognac">Cognac</option>
+                <option value="gin">Gin</option>
+                <option value="ouzo">Ouzo</option>
+                <option value="mastika">Mastika</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="coffe"><b>Coffee</b></label>
+            <select name="coffe" id="coffe">
+                <option disabled selected>Please select a drink</option>
+                <option value="americano">Americano</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="mocha">Mocha</option>
+                <option value="espresso">Espresso</option>
+                <option value="turkish">Turkish</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <input type="checkbox" name="sizedrink" id="drinksize" value="Large Drink Size">
+            <label for="drinksize">Large Drink Size</label>&nbsp;<em>(Extra 75c)</em>
+            <br>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <input type="reset" name="reset" value="Reset Order" id="reset">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Place Order" id="submit">
+        <br>
+        <br>
+        <br>
+        <label for="button">You have a question ? Click here:</label>
+        <input type="button" name="question" value="I have a question" id="button">
+        <br>
+        <br>
+        <br>
+        <p><strong><big>Forgot something ? Well Click here to go to the top:</big></strong></p>
+        <a href="#to_top"><button>GO TO TOP</button></a>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
